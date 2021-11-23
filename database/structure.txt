@@ -1,0 +1,86 @@
+database equipment_sales
+
+manufacurer(
+	name,
+	about
+)
+
+
+model_type(
+	name,
+	about
+)
+
+external_antenna_type(
+	name,
+	about
+)
+
+supported_technologies(
+	name,
+	about
+)
+
+model(
+	name,
+	manufacturer_id,
+	equipment_type_id,
+	external_antena_type_id,
+	supported_technologies_id
+	
+)
+_________model end_______________________________________
+
+_________equipment start_________________________________
+
+supplier(
+	name,
+	about
+)
+
+equipent_status(
+	name
+)
+
+equipment(
+	sn
+	model_id,
+	supplier_id,
+	arrival_date,
+	arrival_price,
+	equipment_status_id,
+	details
+)
+__________equipment end______________________________________
+
+
+dealer(
+	name,
+	about
+)
+
+customer(
+	name,
+	phone,
+	address,
+	dealer_id,
+	details
+)
+
+__________sales start_________________________________________
+
+sales(
+	sale_date,
+	sale_price,
+	equipment_id,
+	customer_id,
+	details
+
+)
+
+
+__________________________________________________
+
+
+
+	
