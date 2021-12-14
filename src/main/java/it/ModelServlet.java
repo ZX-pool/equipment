@@ -25,7 +25,7 @@ public class ModelServlet extends HttpServlet {
         String manufacturer = req.getParameter("manufacturer");
 
         List<Model> models = modelServices.getModels();
-        models.stream().filter(model -> model.getManufacturer().equals(manufacturer)).forEach(System.out :: println);
+
     }
 
     @Override
@@ -33,8 +33,7 @@ public class ModelServlet extends HttpServlet {
         String manufacturer = req.getParameter("manufacturer");
         System.out.println(manufacturer);
         List<Model> models = modelServices.getModels();
-        models.stream().forEach(System.out :: println);
-        //models.stream().filter(model -> model.getManufacturer().toString().equalsIgnoreCase(manufacturer)).forEach(System.out :: println);
+
 
 
     }
